@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    background-image: url('bg.svg');
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    
+}
+p{
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Set the container height to fill the viewport */
+}
+
+.upper-row, .lower-row {
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    height: 200px;
+    width: auto;
+}
+.box {
+    font-size: .75em;
+    color: white;
+    width: 30%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    background-color: rgba(55, 26, 26, 0.5);
+    border-radius: 20px;
+    margin: 5px;
+    border: 1px solid rgb(107, 96, 76);
+    box-sizing: border-box; /* Include padding and border in box's total width */
+}
+.box p{
+    font-size: 1.5em;
+}
+
+button {
+    background-color: transparent; /* Set button background to transparent */
+    border: 2px solid orange; /* Add border for visibility */
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}  
+
+@media (max-width: 600px) {
+    .upper-row, .lower-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 100%; /* Each box takes 100% width on smaller screens */
+    }
+}

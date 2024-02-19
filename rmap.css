@@ -1,0 +1,40 @@
+body{
+    background-image: url('bg.svg');
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    
+}
+
+
+.odd{
+    color: white;
+    width: 45%;
+    height: 16%;
+    background-color: transparent;
+    border: 1px solid gold;
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: margin-left 3s ease-in .8s ;
+}
+.odd:hover{
+    margin-left: 200px;
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.even{
+    color: white;
+    width : 45%;
+    height: 16%;
+    background-color: transparent;
+    border: 1px solid gold;
+    margin-right: 10px;
+    margin-left: auto;
+    border-radius: 20px;
+    transition: margin-right 3s ease-in .8s ;
+}
+
+.even:hover{
+    background-color: rgba(255, 215, 0, 0.1);
+    margin-right: 200px; 
+    
+}

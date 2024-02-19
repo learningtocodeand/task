@@ -1,0 +1,25 @@
+body{
+    color: white;
+    background-color: black;
+
+}
+.container{
+    display: flex;
+}
+
+.inline{
+    display: inline-block;
+}
+
+h1{
+    font-size: 3em;
+}
+
+button{
+    background-color: rgba(255, 215, 0, 0.1);
+    color: gold;
+    border-radius: 5px;
+}
+main{
+    width: 80%;
+}

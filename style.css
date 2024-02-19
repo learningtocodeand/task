@@ -1,0 +1,156 @@
+
+/* style for the navigation bar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.brand {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: #444;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+}
+
+/*to set up backgroung image*/
+body {
+    background-image: url('bg.svg');
+    background-size: cover; /* or contain */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* Optionally, set a background color in case the image is not available */
+    background-color: #f0f0f0;
+}
+
+ .content {
+     /* Additional styles for content  */
+    text-align: center;
+    padding: 50px 0;
+   
+} 
+
+.container{
+    display: flex;
+}
+.inline{
+    display: inline-block;
+}
+#one h1,p{
+    color: white;
+}
+#two img{
+    width: 400px;
+    height: auto;
+}
+h1{
+    font-size: 3em;
+}
+p{
+    font-size: .75em;
+}
+
+button {
+    background-color: transparent; /* Set button background to transparent */
+    border: 2px solid white; /* Add border for visibility */
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer; 
+    /* Add additional styling as needed */
+}
+
+#cont{
+    background-color: orange;
+}
+
+#detail{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(255, 215, 0, 0.1);
+    border: 1px solid black;
+    border-radius:40px ;
+}
+#details p{
+    font-size: 1.5em;
+
+}

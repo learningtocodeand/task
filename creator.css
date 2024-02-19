@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh; /* Set the container height to fill the viewport */
+}
+
+.upper-row, .lower-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    color: white;
+    width: 25%; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    background-color: rgba(55, 26, 26, 0.5);;
+    margin: 5px;
+    padding: auto;
+    margin: 10px;
+    border-radius: 10px ;
+    box-sizing: border-box; /* Include padding and border in box's total width */
+}
+img{
+    scale: .75;
+}
+b{
+    color: white;
+}
